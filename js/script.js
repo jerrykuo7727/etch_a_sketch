@@ -6,4 +6,7 @@ $(document).ready(function(){
 	$("#gameboard div div").hover(function(){
 		$(this).css("background", "#666666");
 	});
+	$("#reset").click(function(){
+		$("#gameboard div div").css("background", "#FFFFFF");
+	});
 });
