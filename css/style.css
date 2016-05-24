@@ -1,7 +1,36 @@
+body {
+	position: relative;
+	background: red;
+}
+
+h1 {
+	background: green;
+	text-align: center;
+	font-size: 80px;
+	margin: 64px;
+	margin-bottom: 32px;
+}
+
+#toolbar {
+	position: relative;
+	left: 50%;
+	transform: translate(-50%, 0);
+	display: inline-block;
+	background: yellow;
+}
+
+button {
+	margin-left: 20px;
+	margin-right: 20px;
+	position: relative;
+	width: 180px; height: 60px;
+	font-size: 28px;
+}
+
 #gameboard {
 	position: relative;
 	margin: 0 auto;
-	margin-top: 50px;
+	margin-top: 32px;
 	width: 823px;
 	height: 800px;
 	border-left: 1px solid black;
