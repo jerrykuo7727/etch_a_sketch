@@ -11,14 +11,14 @@ $(document).ready(function(){
 		$("#gameboard div div").css("background", "#FFFFFF");
 	});
 	$("#resize").click(function(){
-		var row = Math.ceil(prompt("請輸入畫板列數(最多50)"));
-		var col = Math.ceil(prompt("請輸入畫板行數(最多50)"));
+		var row = Math.ceil(prompt("請輸入畫板列數(最多30)"));
+		var col = Math.ceil(prompt("請輸入畫板行數(最多30)"));
 		if (row > 0 || col > 0) {
-			if (row > 50) row = 50;
-			if (col > 50) col = 50;
+			if (row > 30) row = 30;
+			if (col > 30) col = 30;
 			$("#gameboard").empty();
-			var width = 800 / col;
-			var height = 800 / row;
+			var width = 640 / col;
+			var height = 640 / row;
 			var side = width < height ? width : height;
 			for (var i = 0; i < row; i++)
 				$("#gameboard").append('<div align="center"></div>');
